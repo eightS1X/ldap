@@ -31,6 +31,7 @@ public class WbSecurityConfig extends WebSecurityConfigurerAdapter {
                 .userDnPatterns("uid={0},ou=people")
                 .groupSearchBase("ou=groups")
                 .contextSource()
+                    // these properties defined in application.properties
                     .url("ldap://localhost:8389/dc=springframework,dc=org")
                     .and()
                 // encoder & name of password attribute
