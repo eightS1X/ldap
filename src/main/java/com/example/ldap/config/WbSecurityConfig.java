@@ -12,6 +12,8 @@ public class WbSecurityConfig extends WebSecurityConfigurerAdapter {
 
     // configuring security policy using pure Java
 
+    // this config fronts all requests to our basic "/" endpoint with a default spring security page
+
     // overriding methods of superclass
     @Override
     protected void configure(HttpSecurity http) throws Exception {
